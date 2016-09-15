@@ -1,0 +1,7 @@
+import = [
+            {
+                cdstable = "package_test01.data::books.Books";
+                file = "package_test01.data:books.csv";
+                header = false;
+            }
+];

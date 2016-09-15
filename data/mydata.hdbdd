@@ -1,0 +1,17 @@
+namespace package_test01.data;
+
+@Schema: 'mycj'
+context mydata {
+    type SDate   : UTCTimestamp;
+    type SString : String(40);
+    type LString : String(255);
+    
+    @Catalog.tableType : #COLUMN
+    Entity Book {
+        key ID: Integer;
+        BOOKNAME: LString;
+        CATEGORY: LString;
+        INVDATE: SDate;
+    };
+
+};
