@@ -1,0 +1,3 @@
+service namespace "package_test01.services" {
+    "package_test01.data::books.Books" as "library";
+}

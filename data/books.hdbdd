@@ -1,0 +1,23 @@
+namespace package_test01.data;
+
+@Schema: 'CJBOOKS'
+context books {
+        type SString : String(40);
+        type LString : String(800);
+    type tt_error {
+        HTTP_STATUS_CODE: Integer;
+        ERROR_MESSAGE: String(100);
+        DETAIL: String(200);
+    };
+    type tt_book{
+        NAME: LString;
+        GENRE: SString;
+    };
+    
+    @Catalog.tableType : #COLUMN
+    Entity Books {
+    key BOOK_ID: SString;
+    NAME: LString;
+    GENRE: SString;
+    };
+};

@@ -1,0 +1,10 @@
+role package_test01.data::user
+{
+catalog sql object "mycj"."package_test01.data::mydata.Book": //Objecttype: TABLE
+	SELECT, INSERT, UPDATE, DELETE;
+catalog sql object "CJBOOKS"."package_test01.data::books.Books": //Objecttype: TABLE
+	SELECT, INSERT, UPDATE, DELETE;
+schema package_test01.data:mycj.hdbschema: EXECUTE, INSERT, SELECT, UPDATE, DELETE, INDEX, DEBUG, CREATE ANY;
+
+
+}
